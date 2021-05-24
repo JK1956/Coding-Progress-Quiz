@@ -145,6 +145,10 @@ var questions = [
     if (runningQuestion < 5) {
       firstQuestion();
     }
+
+    if (secondsLeft === 0) {
+      event.stopPropagation();
+    }
   });
   }
   
